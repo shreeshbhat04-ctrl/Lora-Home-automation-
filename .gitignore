@@ -1,32 +1,27 @@
-# Prerequisites
+# Arduino build artifacts
+*.ino.cpp
+*.hex
+*.elf
+*.eep
+*.map
+*.bin
 *.d
-
-# Compiled Object files
-*.slo
-*.lo
 *.o
 *.obj
 
-# Precompiled Headers
+# Precompiled headers
 *.gch
 *.pch
 
-# Linker files
+# Linker and debug files
 *.ilk
-
-# Debugger Files
 *.pdb
+*.dwo
 
-# Compiled Dynamic libraries
+# Compiled libraries
 *.so
 *.dylib
 *.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
 *.lai
 *.la
 *.a
@@ -37,5 +32,30 @@
 *.out
 *.app
 
-# debug information files
-*.dwo
+# IDE-specific folders
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Verilog simulation outputs
+*.vcd
+*.log
+*.bak
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+venv/
+.env
+
+# Secrets and config
+secrets.h
+config.h
+*.blynk*
+
+# OS-specific files
+.DS_Store
+Thumbs.db
